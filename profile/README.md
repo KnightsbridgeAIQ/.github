@@ -23,11 +23,11 @@ npm install kxco-pq
 | [`kxco-pq-sdk`](https://github.com/KnightsbridgeAIQ/kxco-pq-sdk) | Hierarchical identity credentials (institution → user), KYC-gated issuance, audited signing |
 | [`kxco-pq-vault`](https://github.com/KnightsbridgeAIQ/kxco-pq-vault) | ML-KEM-768 envelope encryption for files and payloads |
 | [`kxco-pq-tls`](https://github.com/KnightsbridgeAIQ/kxco-pq-tls) | Hybrid ML-KEM-768 + X25519 encrypted streams and WebSockets |
-| [`kxco-post-quantum-webhook`](https://github.com/KnightsbridgeAIQ/kxco-post-quantum-webhook) | Dual-signed webhooks — HMAC-SHA-256 + ML-DSA-65. Express, Fastify, Hono, Workers, Vercel |
+| [`kxco-post-quantum-webhook`](https://github.com/KnightsbridgeAIQ/kxco-pq-webhook) | Dual-signed webhooks — HMAC-SHA-256 + ML-DSA-65. Express, Fastify, Hono, Workers, Vercel |
 | [`kxco-pq-cli`](https://github.com/KnightsbridgeAIQ/kxco-pq-cli) | Keygen, fingerprinting, and signed key-rotation manifests |
 | [`kxco-verify`](https://github.com/KnightsbridgeAIQ/kxco-verify) | Independent, browser-safe verifier for signed deploy attestations |
 
-*(Also published: `kxco-pq-hsm`, `kxco-pq-audit`, `kxco-pq-attest`, `kxco-pq-chain`, and multi-language [verifiers](https://github.com/KnightsbridgeAIQ/kxco-post-quantum-verifiers) in Go, Python, and Rust.)*
+*(Also published: `kxco-pq-hsm`, `kxco-pq-audit`, `kxco-pq-attest`, `kxco-pq-chain`, and multi-language [verifiers](https://github.com/KnightsbridgeAIQ/kxco-pq-verifiers) in Go, Python, and Rust.)*
 
 ---
 
