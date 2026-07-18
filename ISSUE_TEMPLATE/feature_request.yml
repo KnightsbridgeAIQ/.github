@@ -1,0 +1,36 @@
+name: Feature request
+description: Describe a capability you need
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - kxco-pq
+        - kxco-post-quantum
+        - kxco-pq-sdk
+        - kxco-pq-vault
+        - kxco-pq-tls
+        - kxco-pq-webhook
+        - kxco-pq-cli
+        - kxco-pq-hsm
+        - kxco-pq-audit
+        - kxco-pq-attest
+        - kxco-pq-chain
+        - kxco-pq-verifiers
+        - kxco-verify
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: The use case
+      description: What are you trying to accomplish? Describe the problem, not the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current workaround, if any
