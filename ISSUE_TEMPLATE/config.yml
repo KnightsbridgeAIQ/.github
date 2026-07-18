@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/KnightsbridgeAIQ/.github/security/policy
+    about: Never report security issues in public issues.
+  - name: Product & commercial support
+    url: https://kxco.ai/contact
+    about: Account, product, and commercial questions belong here, not GitHub issues.
