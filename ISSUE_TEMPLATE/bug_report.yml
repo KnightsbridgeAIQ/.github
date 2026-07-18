@@ -1,0 +1,58 @@
+name: Bug report
+description: Report a defect in a KXCO package
+labels: [bug]
+body:
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - kxco-pq
+        - kxco-post-quantum
+        - kxco-pq-sdk
+        - kxco-pq-vault
+        - kxco-pq-tls
+        - kxco-pq-webhook
+        - kxco-pq-cli
+        - kxco-pq-hsm
+        - kxco-pq-audit
+        - kxco-pq-attest
+        - kxco-pq-chain
+        - kxco-pq-verifiers
+        - kxco-verify
+        - other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      placeholder: "e.g. 1.2.3"
+    validations:
+      required: true
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime
+      placeholder: "e.g. Node 22.4, Chrome 140, Cloudflare Workers"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: Smallest code snippet or steps that reproduce the problem.
+      render: shell
+  - type: checkboxes
+    id: not-security
+    attributes:
+      label: Security check
+      options:
+        - label: This is NOT a security vulnerability (those go to the Security tab or security@kxco.ai, never a public issue)
+          required: true
