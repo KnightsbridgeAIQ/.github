@@ -29,6 +29,13 @@ See [SECURITY.md](SECURITY.md).
 6. Company code lives in this organization — never in personal accounts.
    This applies to employees and contractors alike.
 
+## Deprecation policy
+
+When a repository or package reaches end of life we do not delete it or let
+it rot. We prefix its description with "DEPRECATED", point to the successor
+in the description and README, then archive the repository. Archived code
+stays browsable forever.
+
 ## Questions
 
 Open an issue on the relevant repository, or email **hello@kxco.ai**.
