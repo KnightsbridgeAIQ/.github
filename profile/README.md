@@ -39,6 +39,7 @@ npm install kxco-pq
 - **[NIST FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)** — ML-KEM-768 key encapsulation
 - Built on **[`@noble/post-quantum`](https://github.com/paulmillr/noble-post-quantum)** — audited by Cure53 (2024)
 - Packages publish to npm with **build provenance** and Apache-2.0 licensing
+- [Armature L1 white paper](https://chain.kxco.ai/whitepaper) · [developer docs](https://chain.kxco.ai/docs) · [network explorer](https://chain.kxco.ai)
 
 **Company:** Knightsbridge Financial Ltd (UK Company No. 15684975) · LEI 213800TMP5DQFDKOZ549 · ICO registered (C1961692)
 **Compliance:** NIST FIPS 203/204/205 · UK eIDAS Advanced e-Signature · NIST ACVTS validation active · NSA CNSA 2.0 (Armature L1)
