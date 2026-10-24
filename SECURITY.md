@@ -30,9 +30,10 @@ upstream to [`@noble/post-quantum`](https://github.com/paulmillr/noble-post-quan
 
 ## Our cryptography policy
 
-Every algorithm we ship is NIST-standardized — ML-DSA-65
-([FIPS 204](https://csrc.nist.gov/pubs/fips/204/final)) and ML-KEM-768
-([FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)) — built on
+Every algorithm we ship is NIST-standardised: ML-DSA-87 and ML-DSA-65
+([FIPS 204](https://csrc.nist.gov/pubs/fips/204/final)), ML-KEM-1024 and ML-KEM-768
+([FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)) and SLH-DSA
+([FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)), built on
 independently audited implementations. We do not write custom cryptographic
 primitives. An independent audit of our own wrapper code is on our roadmap;
 until it completes, we state plainly: the primitives are audited (Cure53,

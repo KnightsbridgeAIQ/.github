@@ -21,11 +21,11 @@ npm install kxco-pq
 | Package | What it does |
 |---|---|
 | [`kxco-pq`](https://github.com/KnightsbridgeAIQ/kxco-pq) | The complete stack in one install — identity, HSM, audit, attestation, encrypted channels, file encryption, webhook signing |
-| [`kxco-post-quantum`](https://github.com/KnightsbridgeAIQ/kxco-post-quantum) | Core primitives — ML-DSA-65 signatures + ML-KEM-768 key encapsulation. Every other package builds on this |
+| [`kxco-post-quantum`](https://github.com/KnightsbridgeAIQ/kxco-post-quantum) | Core primitives: ML-DSA-87 and ML-DSA-65 signatures, ML-KEM-1024 and ML-KEM-768 key encapsulation, plus SLH-DSA. Every other package builds on this |
 | [`kxco-pq-sdk`](https://github.com/KnightsbridgeAIQ/kxco-pq-sdk) | Hierarchical identity credentials (institution → user), KYC-gated issuance, audited signing |
-| [`kxco-pq-vault`](https://github.com/KnightsbridgeAIQ/kxco-pq-vault) | ML-KEM-768 envelope encryption for files and payloads |
-| [`kxco-pq-tls`](https://github.com/KnightsbridgeAIQ/kxco-pq-tls) | Hybrid ML-KEM-768 + X25519 encrypted streams and WebSockets |
-| [`kxco-post-quantum-webhook`](https://github.com/KnightsbridgeAIQ/kxco-pq-webhook) | Dual-signed webhooks — HMAC-SHA-256 + ML-DSA-65. Express, Fastify, Hono, Workers, Vercel |
+| [`kxco-pq-vault`](https://github.com/KnightsbridgeAIQ/kxco-pq-vault) | ML-KEM-1024 envelope encryption for files and payloads, with ML-KEM-768 still supported |
+| [`kxco-pq-tls`](https://github.com/KnightsbridgeAIQ/kxco-pq-tls) | Hybrid ML-KEM-1024 + X25519 encrypted streams and WebSockets, with ML-KEM-768 on request |
+| [`kxco-post-quantum-webhook`](https://github.com/KnightsbridgeAIQ/kxco-pq-webhook) | Dual-signed webhooks: HMAC-SHA-256 + ML-DSA-87 or ML-DSA-65. Express, Fastify, Hono, Workers, Vercel |
 | [`kxco-pq-cli`](https://github.com/KnightsbridgeAIQ/kxco-pq-cli) | Keygen, fingerprinting, and signed key-rotation manifests |
 | [`kxco-verify`](https://github.com/KnightsbridgeAIQ/kxco-verify) | Independent, browser-safe verifier for signed deploy attestations |
 
@@ -35,8 +35,8 @@ npm install kxco-pq
 
 ## Standards & assurance
 
-- **[NIST FIPS 204](https://csrc.nist.gov/pubs/fips/204/final)** — ML-DSA-65 digital signatures
-- **[NIST FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)** — ML-KEM-768 key encapsulation
+- **[NIST FIPS 204](https://csrc.nist.gov/pubs/fips/204/final)**: ML-DSA-87 and ML-DSA-65 digital signatures
+- **[NIST FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)**: ML-KEM-1024 and ML-KEM-768 key encapsulation
 - Built on **[`@noble/post-quantum`](https://github.com/paulmillr/noble-post-quantum)** — audited by Cure53 (2024)
 - Packages publish to npm with **build provenance** and Apache-2.0 licensing
 - [Armature L1 white paper](https://chain.kxco.ai/whitepaper) · [developer docs](https://docs.kxco.ai) · [network explorer](https://chain.kxco.ai)
